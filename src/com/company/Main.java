@@ -1,21 +1,23 @@
+package com.company;
+
 import java.util.*;
 
 public class Main {
 	
-	public static void main (String[] args) {
-		SocialNetwork social=new SocialNetwork();
+	public static void main (final String[] args) {
+		final SocialNetwork social=new SocialNetwork();
 		
-		Post laMadonna=new Post("15", "Filippo", "Sucami un Pruno");
-		Post Prova=new Post("36", "Caio", "like 15");
+		final Post laMadonna=new Post("15", "Filippo", "Sucami un Pruno");
+		final Post Prova=new Post("36", "Caio", "like 15");
 		
-		ArrayList<Post> lista= new ArrayList();
+		final ArrayList<Post> lista= new ArrayList();
 		lista.add(laMadonna);
 		lista.add(Prova);
 		
 		try {
 			social.guessFollowers(lista);
 		}
-		catch (NullPointerException e) {
+		catch (final NullPointerException e) {
 			
 		}
 	}

@@ -1,3 +1,5 @@
+package com.company;
+
 import java.util.*;
 
 
@@ -31,7 +33,7 @@ public class SocialNetwork {
 				String user=searchUser(id, ps); //cerca l'utente corrispondente all'id del post
 				reteSociale.put(p.author, new HashSet<String>());
 				reteSociale.get(p.author).add(user);
-				System.out.println(reteSociale.get(p.author).contains(user));
+				System.out.println("dio can= " + reteSociale.get(p.author).contains(user));
 			}		
 		}
 		return reteSociale;
